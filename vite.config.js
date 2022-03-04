@@ -10,4 +10,5 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
+  extensions: [".js", ".ts", ".tsx", ".jsx"],
 })
