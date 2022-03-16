@@ -10,7 +10,11 @@ import {
   ElRow,
   ElCol,
   ElBreadcrumb,
-  ElBreadcrumbItem
+  ElBreadcrumbItem,
+  ElTooltip,
+  ElDropdown,
+  ElDropdownItem,
+  ElDropdownMenu
 } from 'element-plus'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -35,7 +39,11 @@ export default (app: App): void => {
     ElRow,
     ElCol,
     ElBreadcrumb,
-    ElBreadcrumbItem
+    ElBreadcrumbItem,
+    ElTooltip,
+    ElDropdown,
+    ElDropdownMenu,
+    ElDropdownItem
   ]
 
   components.forEach(component => {

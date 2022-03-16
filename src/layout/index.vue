@@ -5,9 +5,8 @@
     </div>
     <div class="main-container">
       <div class="header">
-        <div class="navbar">
+
           <Navbar />
-        </div>
         <div class="tags-view">tagsview</div>
       </div>
       <!-- AppMain router-view -->
