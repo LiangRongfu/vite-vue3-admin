@@ -5,9 +5,8 @@
     </div>
     <div class="main-container">
       <div class="header">
-
-          <Navbar />
-        <div class="tags-view">tagsview</div>
+        <navbar />
+        <tags-view />
       </div>
       <!-- AppMain router-view -->
       <app-main />
@@ -19,15 +18,15 @@
 import { defineComponent } from 'vue'
 import Sidebar from './components/Sidebar/index.vue'
 import AppMain from './components/AppMain.vue'
-import Breadcrumb from '@/components/Breadcrumb/index.vue'
 import Navbar from './components/Navbar.vue'
+import TagsView from './components/TagsView/index.vue'
 
 export default defineComponent({
   components: {
     Sidebar,
     AppMain,
-    Breadcrumb,
-    Navbar
+    Navbar,
+    TagsView
   }
 })
 </script>
@@ -41,17 +40,6 @@ export default defineComponent({
       flex: 1;
       display: flex;
       flex-direction: column;
-      .header {
-        // background: cyan;
-        .navbar {
-          height: 50px;
-          // background: #1890ff;
-        }
-        .tags-view {
-          height: 34px;
-          background: #12efff;
-        }
-      }
       .app-main {
         /* 50= navbar  50  如果有tagsview + 34  */
         min-height: calc(100vh - 84px);

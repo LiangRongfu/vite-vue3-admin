@@ -27,7 +27,7 @@
       </sidebar-item-link>
     </template>
     <!-- 有多个子路由时 -->
-    <el-submenu
+    <el-sub-menu
       v-else
       :index="resolvePath(item.path)"
       popper-append-to-body
@@ -54,7 +54,7 @@
         >
         </sidebar-item>
       </template>
-    </el-submenu>
+    </el-sub-menu>
   </div>
 </template>
 
